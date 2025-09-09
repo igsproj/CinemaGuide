@@ -1,0 +1,20 @@
+import '@/assets/css/normalize.css'
+import '@/assets/css/init.css'
+import '@/assets/css/helpers.css'
+import '@/assets/css/animation.css'
+import '@/assets/css/fonts.css'
+import '@/assets/css/style.css'
+import '@/assets/css/media.css'
+
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+
+import App from './App.vue'
+import router from './router'
+
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+
+app.mount('#app')
